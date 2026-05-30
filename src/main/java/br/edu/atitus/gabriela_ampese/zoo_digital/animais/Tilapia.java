@@ -3,9 +3,9 @@ package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Peixe;
 
-public final class Lambari extends Peixe implements Nado {
+public final class Tilapia extends Peixe implements Nado {
 
-    public Lambari(String nome, int idade) {
+    public Tilapia(String nome, int idade) {
         super(nome, idade, "Doce");
     }
 
@@ -21,6 +21,7 @@ public final class Lambari extends Peixe implements Nado {
 
     @Override
     public void nadar() {
-        IO.println(getNome() + " está nadando rapidamente pelo rio");
+        IO.println(getNome() + " está nadando pelo açude");
     }
+
 }

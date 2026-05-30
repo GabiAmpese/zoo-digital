@@ -1,5 +1,5 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos;
 
 public interface Predacao {
-    void main cacar();
+    void cacar();
 }

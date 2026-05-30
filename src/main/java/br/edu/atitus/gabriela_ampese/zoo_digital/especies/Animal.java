@@ -1,7 +1,7 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.especies;
 
 public abstract class Animal {
-    //Atributo Estático
+    // Atributo Estático
     // Pertence à classe
     // Exite UMA vez só, e é compartilhado entre as instâncias
     private static int contador = 0;
@@ -49,7 +49,7 @@ public abstract class Animal {
     public void comer() {
         this.comer("alguma coisa");
     }
-    // Sobrecarga de método - Polimorfismo estático
+    // Sobrecarga de método polimorfismo estático
     // Dois ou mais métodos com o mesmo identificador, mas assinatura diferentes
     public final void comer(String alimento) {
         IO.println(this.getNome() + " está comendo " + alimento);

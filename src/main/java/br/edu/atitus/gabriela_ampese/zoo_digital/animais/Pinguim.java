@@ -1,9 +1,10 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
+
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Ave;
 
-public class Pinguim extends Ave implements Nado {
+public class Pinguim extends Ave implements Nado, Predacao {
 
     public Pinguim(String nome, int idade, String corPenas) {
         super(nome, idade, corPenas);

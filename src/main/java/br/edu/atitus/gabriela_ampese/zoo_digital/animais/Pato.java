@@ -1,11 +1,12 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
+
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Corrida;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Voo;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Ave;
 
-public class Pato extends Ave implements Corrida, Nado, Voo {
+public class Pato extends Ave implements Corrida, Nado, Voo, Predacao {
 
     public Pato(String nome, Integer idade, String corPenas) {
         super(nome, idade, corPenas);
@@ -16,31 +17,28 @@ public class Pato extends Ave implements Corrida, Nado, Voo {
         this.comer("plantinhas do lago");
     }
 
-    
     @Override
     public void emitirSom() {
-        IO.println(getNome() + " está grasnando");
+        IO.println(this.getNome() + " está grasnando!");
     }
-    
 
     @Override
     public void voar() {
-        IO.println(this.getNome() + " está voando em migração para o Sul!");
+        IO.println(this.getNome() + " está voando em direção ao sul!");
     }
 
     @Override
     public void nadar() {
-        IO.println(this.getNome() + " está nadando elegantemente!");
+        IO.println(this.getNome() + " está nadando tranquilamente no lago!");
     }
 
     @Override
     public void correr() {
-        IO.println(this.getNome() + " está correndo todo atrapalhado!");
+        IO.println(this.getNome() + " está correndo de forma atrapalhada!");
     }
 
     @Override
     public void cacar() {
-        IO.println(this.getNome() + " está caçando minhocas ao ciscar na terra!");
+        IO.println(this.getNome() + " está procurando minhocas para comer!");
     }
-
 }

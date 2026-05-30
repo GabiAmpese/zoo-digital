@@ -1,9 +1,10 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
+
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Peixe;
 
-public class PeixeMorcego extends Peixe implements Nado {
+public class PeixeMorcego extends Peixe implements Nado, Predacao {
 
     public PeixeMorcego(String nome, int idade) {
         super(nome, idade, "Salgada");

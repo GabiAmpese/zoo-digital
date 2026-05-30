@@ -1,10 +1,12 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
+
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Corrida;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Mamifero;
 
-public final class Cachorro extends Mamifero implements Corrida, Nado {
+public final class Cachorro extends Mamifero implements Corrida, Nado, Predacao {
+
     public Cachorro(String nome, Integer idade) {
         super(nome, idade, true);
     }
@@ -33,5 +35,4 @@ public final class Cachorro extends Mamifero implements Corrida, Nado {
     public void cacar() {
         IO.println(this.getNome() + " está caçando o gato da vizinha!");
     }
-    
 }

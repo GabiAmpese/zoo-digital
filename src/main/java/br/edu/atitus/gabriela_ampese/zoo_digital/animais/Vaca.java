@@ -1,8 +1,10 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
+
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Corrida;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Mamifero;
 
-public final class Vaca extends Mamifero implements Corrida, {
+public final class Vaca extends Mamifero implements Corrida {
+
     public Vaca(String nome, Integer idade) {
         super(nome, idade, true);
     }
@@ -21,5 +23,4 @@ public final class Vaca extends Mamifero implements Corrida, {
     public void correr() {
         IO.println(this.getNome() + " está correndo atrás de outra vaca!");
     }
-
 }

@@ -1,8 +1,10 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
+
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Corrida;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Mamifero;
 
-public final class Cavalo extends Mamifero implements Corrida, Nado {
+public final class Cavalo extends Mamifero implements Corrida {
+
     public Cavalo(String nome, Integer idade) {
         super(nome, idade, true);
     }
@@ -19,8 +21,6 @@ public final class Cavalo extends Mamifero implements Corrida, Nado {
 
     @Override
     public void correr() {
-        IO.println(this.getNome() + " está galopando muito rápido e com força!");
+        IO.println(this.getNome() + " está galopando muito rápido!");
     }
-
 }
-
