@@ -1,5 +1,6 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
+import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Mamifero;
 
 public final class Golfinho extends Mamifero implements Nado {
@@ -19,5 +20,10 @@ public final class Golfinho extends Mamifero implements Nado {
     @Override
     public void nadar() {
         IO.println(this.getNome() + " está nadando feliz!");
+    }
+
+    @Override
+    public void cacar() {
+        IO.println(this.getNome() + " está caçando um leão marinho!");
     }
 }

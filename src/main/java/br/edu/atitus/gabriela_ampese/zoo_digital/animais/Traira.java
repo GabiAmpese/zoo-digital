@@ -1,5 +1,6 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
+import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Peixe;
 
 public class Traira extends Peixe implements Nado {
@@ -22,5 +23,9 @@ public class Traira extends Peixe implements Nado {
     public void nadar() {
         IO.println(getNome() + " está nadando no rio");
     }
-    
+
+    @Override
+    public void nadar() {
+        IO.println(getNome() + " está caçando com a tática de emboscada");
+    }
 }

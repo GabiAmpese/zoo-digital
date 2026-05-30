@@ -2,6 +2,7 @@ package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Corrida;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Voo;
+import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Ave;
 
 public class Pato extends Ave implements Corrida, Nado, Voo {
@@ -35,6 +36,11 @@ public class Pato extends Ave implements Corrida, Nado, Voo {
     @Override
     public void correr() {
         IO.println(this.getNome() + " está correndo todo atrapalhado!");
+    }
+
+    @Override
+    public void cacar() {
+        IO.println(this.getNome() + " está caçando minhocas ao ciscar na terra!");
     }
 
 }

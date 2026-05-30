@@ -1,5 +1,6 @@
 package br.edu.atitus.gabriela_ampese.zoo_digital.animais;
 import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Nado;
+import br.edu.atitus.gabriela_ampese.zoo_digital.comportamentos.Predacao;
 import br.edu.atitus.gabriela_ampese.zoo_digital.especies.Peixe;
 
 public class PeixeMorcego extends Peixe implements Nado {
@@ -22,6 +23,9 @@ public class PeixeMorcego extends Peixe implements Nado {
     public void nadar() {
         IO.println(getNome() + " está nadando tranquilamente");
     }
-    
-    
+
+    @Override
+    public void cacar() {
+        IO.println(getNome() + " está cacando suas presas com dua vara de pesca biológica");
+    }
 }
