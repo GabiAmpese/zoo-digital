@@ -59,7 +59,9 @@ public abstract class Animal {
     // Polimorfismo Dinâmico
     @Override
     public String toString() {
-        return "Nome: " + this.getNome() + "; Idade: " + this.getIdade() + " anos.";
+        return "Nome: " + this.getNome() +
+                "; Idade: " + this.getIdade() +
+                " anos; Espécie: " + this.getEspecie() + ".";
     }
 
 

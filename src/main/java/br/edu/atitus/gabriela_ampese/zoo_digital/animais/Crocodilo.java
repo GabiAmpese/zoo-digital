@@ -27,6 +27,6 @@ public final class Crocodilo extends Reptil implements Nado, Predacao {
 
     @Override
     public void cacar() {
-        IO.println(this.getNome() + " está esperando sua presa na margem do rio!");
+        IO.println(this.getNome() + " está escondido, esperando sua presa na margem do rio!");
     }
 }

@@ -21,7 +21,7 @@ public final class Cobra extends Reptil implements Predacao {
 
     @Override
     public void cacar() {
-        IO.println(this.getNome() + " está caçando um rato escondido no mato!");
+        IO.println(this.getNome() + " está caçando um rato pequeninho!");
     }
 
 }

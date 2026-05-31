@@ -21,7 +21,7 @@ public final class Lagarto extends Reptil implements Corrida {
 
     @Override
     public void correr() {
-        IO.println(this.getNome() + " está correndo rapidamente entre as pedras!");
+        IO.println(this.getNome() + " está correndo rapidamente atrás do humano!");
     }
 
 }

@@ -22,7 +22,7 @@ public final class Corvo extends Ave implements Voo, Predacao {
 
     @Override
     public void voar() {
-        IO.println(this.getNome() + " está voando pelos céus!");
+        IO.println(this.getNome() + " está voando atrás de bixos mortos!");
     }
 
     @Override
